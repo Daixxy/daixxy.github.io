@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Digital Marketing Strategist</p>
+            <h1>Hi, I'm <span>Daisy Zhu</span><br> Based in Seattle, WA</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Business discussions in English can feel like varied dialects between tech and business teams. I bridge this gap, aiming for better team collaboration and consumer engagement. My background centers on data-driven digital management. I've implemented innovative solutions to maximize resources and enhance customer experiences. Using tools like Tableau and Google Analytics, I offer insights for informed business decisions. I'm furthering my skills with a master's in UX design at the University of Washington.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Digital Marketing Strategy</span><br></li>
+                        <li><span>Data Analytics</span><br></li>
+                        <li><span>UI/UX Design</span><br></li>
+                        <li><span>Communication and Storytelling</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022.10 - Current</span><br>Digital Marketing Coordinator at Meany Center for Performing Arts</li>
+                        <li><span>2023.7 - 2023.8</span><br>Product Manager at Chatbot Design for UW Foster MSBA & MSCM Programs.</li>
+                        <li><span>2023.6 - 2023.9</span><br>Social Media Content Intern at Pack Up + Go.</li>
+                        <li><span>2023.1 - 2023.6</span><br>Video Producer at ICHS(Internationl Community Health Services).</li>
+                        <li><span>2022.1 - 2022.9</span><br>Employer Branding Strategist at TikTok.</li>
+                        <li><span>2022.3 - 2022.9</span><br>Employer Brand Marketing Coordinator at KPMG.</li>
+                        <li><span>2021.3 - 2021.12</span><br>Integrated Marketing Coordinator at Hill & Knowlton Public Relations Consultant.</li>
+                        <li><span>2020.3 - 2022.1</span><br>Search Engine Optimization Assistant at Dentsu Media.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Master of Arts in Digital Media and Communication, University of Washington</li>
+                        <li><span>2021</span><br>Bachelor of Arts in Public Relations and Advertising, Shih Hsin University.</li>
+                        <li><span>2020</span><br>Exchange Student, Roma Tre Univeristy.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>XR Design</h2>
+                <p>Utilizing the Double Diamond theory, carry out comprehensive user research and interviews, and employee Unity for modeling within the XR design process.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UX Research</h2>
+                <p>Specialize in conducting in-depth UX research to uncover insights and optimize user experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Social Media Management</h2>
+                <p>Offer expert social media management services to elevate your brand's online presence and engagement.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Creative Content Creation</h2>
+                <p>Armed with creativity and expertise, I excel in crafting compelling content that captivates audiences and amplifies your brand's message.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Web Development</h2>
+                <p>Armed with creativity and expertise, I excel in crafting compelling content that captivates audiences and amplifies your brand's message</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>And More...</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Video Production</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="https://www.youtube.com/channel/UC3YyiO8AS3zxlg28BCD1EIg"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>XR Community Building Chess Game</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="https://docs.google.com/presentation/d/1g4_P-BRewMwFVx0efealn5EOrcBuGUQwSIAMZuBPGZM/edit?usp=sharing"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Chatbot Design</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="https://docs.google.com/presentation/d/1U6HkRy1YKgarzXG99vEBGRUhgrtoU1680WmTq37P4-k/edit?usp=sharing"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> jia1222@uw.edu</p>
+                <p><i class="fas fa-phone-square-alt"></i> (206)631-1392</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100021974749424"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/daixxybaby/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jiayi-zhu-0702861a4/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kevin. Made wtih <i class="fas fa-heart"></i> by <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1">Easy Tutorials</a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
