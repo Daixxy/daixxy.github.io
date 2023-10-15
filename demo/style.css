@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #FFF6F4;
+    color: rgb(0, 0, 0);
+}
+#header{
+    width: 100%;
+    background-image: url(daisy1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: rgba(12, 11, 11, 0.904);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(18, 22, 18);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #428282;
+}
+
+.banner{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+a{
+    text-decoration: none;
+    color: #3951AB;
+}
+.hleft{
+    flex: 20%;
+    line-height: 50px;
+    color: #3951AB !important;  
+}
+.hright{
+    flex: 80%;
+}
+.hright p{
+    font-size: 24px;
+    line-height: 38px;
+}
+.hright h1{
+    text-align: center;
+}
+
+.phone-video{
+    display: flex;
+
+}
+.phone-item{
+    flex: 1;
+    text-align: center;
+}
+.phone-item video{
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+.phone-item img{
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+.pic{
+    display: flex;
+    margin: 20px 0;
+}
+.pic-item{
+    flex: 1;
+    text-align: center;
+}
+.pic-item img{
+    width: 90%;
+    border-radius: 15px;
+}
